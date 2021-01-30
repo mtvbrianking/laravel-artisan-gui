@@ -15,8 +15,12 @@ class ArtisanGuiServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/artisan-gui.php' => base_path('config/artisan-gui.php'),
-            ], 'config');
+                __DIR__.'/../config/artisan-gui.php' => config_path('artisan-gui.php'),
+            ], 'artisan-gui-config');
+
+            $this->publishes([
+                __DIR__.'/../resources/js/components' => base_path('resources/js/components/artisan-gui'),
+            ], 'artisan-gui-components');
         }
 
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');

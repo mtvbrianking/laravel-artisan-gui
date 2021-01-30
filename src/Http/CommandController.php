@@ -4,7 +4,7 @@ namespace Bmatovu\AristanGui\Http;
 
 use Bmatovu\AristanGui\Support\Commander;
 use Illuminate\Contracts\Console\Kernel;
-use Illuminate\Foundation\Validation\ValidatesRequests;
+use Illuminate\Contracts\Validation\Factory as ValidationFactory;
 use Illuminate\Http\Request;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Output\BufferedOutput;
@@ -12,18 +12,32 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class CommandController
 {
-    use ValidatesRequests;
+    /**
+     * The console kernel.
+     *
+     * @var \Illuminate\Contracts\Console\Kernel
+     */
+    protected $kernel;
+
+    /**
+     * The validation factory implementation.
+     *
+     * @var \Illuminate\Contracts\Validation\Factory
+     */
+    protected $validation;
 
     /**
      * Create a new controller instance.
      *
-     * @param Kernel $kernel
+     * @param \Illuminate\Contracts\Console\Kernel     $kernel
+     * @param \Illuminate\Contracts\Validation\Factory $validation
      *
      * @return void
      */
-    public function __construct(Kernel $kernel)
+    public function __construct(Kernel $kernel, ValidationFactory $validation)
     {
         $this->kernel = $kernel;
+        $this->validation = $validation;
     }
 
     /**
@@ -55,9 +69,9 @@ class CommandController
     {
         $command = $this->resolve($request->command);
 
-        $validated = $this->validate($request, $this->rules($command));
+        $validated = $this->validation->make($request->all(), $this->rules($command))->validate();
 
-        $parameters = array_merge($validated, config('artisan.options'));
+        $parameters = array_merge($validated, config('artisan-gui.options'));
 
         $outputBuffer = new BufferedOutput();
 
