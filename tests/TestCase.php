@@ -1,7 +1,7 @@
 <?php
-namespace Bmatovu\HelloWorld\Tests;
+namespace Bmatovu\ArtisanGui\Tests;
 
-use Bmatovu\HelloWorld\HelloWorldServiceProvider;
+use Bmatovu\ArtisanGui\ArtisanGuiServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 abstract class TestCase extends Orchestra
@@ -16,21 +16,7 @@ abstract class TestCase extends Orchestra
     protected function getPackageProviders($app)
     {
         return [
-            HelloWorldServiceProvider::class,
-        ];
-    }
-
-    /**
-     * Get package aliases.
-     *
-     * @param \Illuminate\Foundation\Application $app
-     *
-     * @return array
-     */
-    protected function getPackageAliases($app)
-    {
-        return [
-            'HelloWorld' => 'Bmatovu\HelloWorld\HelloWorldFacade',
+            ArtisanGuiServiceProvider::class,
         ];
     }
 }

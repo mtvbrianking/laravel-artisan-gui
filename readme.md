@@ -1,22 +1,22 @@
-## Laravel Package Boilerplate.
+## Laravel Artisan GUI.
 
-[![Build Status](https://travis-ci.org/mtvbrianking/laravel-package-boilerplate.svg?branch=master)](https://travis-ci.org/mtvbrianking/laravel-package-boilerplate)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mtvbrianking/laravel-package-boilerplate/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mtvbrianking/laravel-package-boilerplate/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/mtvbrianking/laravel-package-boilerplate/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/mtvbrianking/laravel-package-boilerplate/?branch=master)
+[![Build Status](https://travis-ci.org/mtvbrianking/laravel-artisan-gui.svg?branch=master)](https://travis-ci.org/mtvbrianking/laravel-artisan-gui)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mtvbrianking/laravel-artisan-gui/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mtvbrianking/laravel-artisan-gui/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/mtvbrianking/laravel-artisan-gui/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/mtvbrianking/laravel-artisan-gui/?branch=master)
 [![StyleCI](https://github.styleci.io/repos/230607368/shield?branch=master)](https://github.styleci.io/repos/230607368)
-[![Documentation](https://img.shields.io/badge/Documentation-Blue)](https://mtvbrianking.github.io/laravel-package-boilerplate)
+[![Documentation](https://img.shields.io/badge/Documentation-Blue)](https://mtvbrianking.github.io/laravel-artisan-gui)
 
-### [Installation](https://packagist.org/packages/bmatovu/laravel-package-boilerplate)
+### [Installation](https://packagist.org/packages/bmatovu/laravel-artisan-gui)
 
 Install via composer package manager:
 
 ```bash
-composer create-project --prefer-dist bmatovu/laravel-package-boilerplate hello-world
+composer require bmatovu/laravel-artisan-gui
 ```
 
 Alternatively, generate a Github repository using the `Use this template` call to action button or the link below...
 
-> https://github.com/mtvbrianking/laravel-package-boilerplate/generate
+> https://github.com/mtvbrianking/laravel-artisan-gui/generate
 
 ### Own the package
 

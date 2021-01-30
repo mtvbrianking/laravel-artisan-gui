@@ -1,16 +1,13 @@
 {
-  "name": "bmatovu/laravel-package-boilerplate",
-  "description": "Laravel package boilerplate.",
-  "homepage": "https://github.com/mtvbrianking/laravel-package-boilerplate",
+  "name": "bmatovu/laravel-artisan-gui",
+  "description": "Laravel artisan GUI",
+  "homepage": "https://github.com/mtvbrianking/laravel-artisan-gui",
   "type": "project",
   "license": "MIT",
   "keywords": [
     "laravel",
-    "lumen",
-    "package",
-    "development",
-    "starter",
-    "boilerplate"
+    "artisan",
+    "gui"
   ],
   "authors": [
     {
@@ -33,12 +30,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Bmatovu\\HelloWorld\\": "src/"
+      "Bmatovu\\ArtisanGui\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Bmatovu\\HelloWorld\\Tests\\": "tests/"
+      "Bmatovu\\ArtisanGui\\Tests\\": "tests/"
     }
   },
   "minimum-stability": "dev",
@@ -56,11 +53,8 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Bmatovu\\HelloWorld\\HelloWorldServiceProvider"
-      ],
-      "aliases": {
-        "HelloWorld": "Bmatovu\\HelloWorld\\HelloWorldFacade"
-      }
+        "Bmatovu\\ArtisanGui\\ArtisanGuiServiceProvider"
+      ]
     }
   }
 }

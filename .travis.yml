@@ -12,7 +12,7 @@ jobs:
 
     - stage: test
 
-      php: 7.2
+      php: 7.3
 
       install:
         - wget https://scrutinizer-ci.com/ocular.phar
@@ -33,10 +33,10 @@ jobs:
 
       if: branch = master
 
-      php: 7.2
+      php: 7.3
 
       before_script:
-        - git clone https://github.com/mtvbrianking/laravel-package-boilerplate.git
+        - git clone https://github.com/mtvbrianking/laravel-artisan-gui.git
 
       script:
        - vendor/bin/doctum.php update doctum.php
