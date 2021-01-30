@@ -18,6 +18,8 @@ class ArtisanGuiServiceProvider extends ServiceProvider
                 __DIR__.'/../config/artisan-gui.php' => base_path('config/artisan-gui.php'),
             ], 'config');
         }
+
+        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
     }
 
     /**
