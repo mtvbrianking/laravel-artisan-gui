@@ -7,6 +7,13 @@ namespace Bmatovu\ArtisanGui\Tests;
  */
 class CommandControllerTest extends TestCase
 {
+    public function test_runs_commands()
+    {
+        $this->artisan('command:dummy')
+            ->expectsOutput('Ran dummy command.')
+            ->assertExitCode(0);
+    }
+
     public function test_gets_artisan_commands()
     {
         $jsonResponse = $this->json('GET', '/commands');
