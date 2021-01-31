@@ -13,7 +13,7 @@
 To publish the  Vue components, use the `vendor:publish` Artisan command:
 
 ```bash
-php artisan vendor:publish --tag=artisan-gui-components
+php artisan vendor:publish --provider="Bmatovu\ArtisanGui\ArtisanGuiServiceProvider"
 ```
 
 The published components will be placed in your `resources/js/components` directory. Once the components have been published, you should register them in your `resources/js/app.js` file:
