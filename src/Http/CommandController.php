@@ -1,8 +1,8 @@
 <?php
 
-namespace Bmatovu\AristanGui\Http;
+namespace Bmatovu\ArtisanGui\Http;
 
-use Bmatovu\AristanGui\Support\Commander;
+use Bmatovu\ArtisanGui\Support\Commander;
 use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Contracts\Validation\Factory as ValidationFactory;
 use Illuminate\Http\Request;

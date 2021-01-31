@@ -1,6 +1,6 @@
 <?php
 
-use Bmatovu\AristanGui\Http\CommandController;
+use Bmatovu\ArtisanGui\Http\CommandController;
 use Illuminate\Support\Facades\Route;
 
 Route::pattern('command', '^[a-z0-9\-\:]*$');

@@ -1,6 +1,6 @@
 <?php
 
-namespace Bmatovu\AristanGui\Support;
+namespace Bmatovu\ArtisanGui\Support;
 
 use Illuminate\Contracts\Console\Kernel;
 use Symfony\Component\Console\Command\Command;
