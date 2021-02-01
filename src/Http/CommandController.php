@@ -167,7 +167,7 @@ class CommandController
         foreach ($command->getDefinition()->getArguments() as $argument) {
             $rules[$argument->getName()] = array_filter([
                 $argument->isRequired() ? 'required' : 'nullable',
-                $argument->isArray() ? 'array': '',
+                $argument->isArray() ? 'array' : '',
             ]);
         }
 
@@ -176,7 +176,7 @@ class CommandController
 
             $rules["--{$name}"] = array_filter([
                 $option->isValueRequired() ? 'required' : 'nullable',
-                $option->isArray() ? 'array': ($option->acceptValue() ? 'string' : 'bool'),
+                $option->isArray() ? 'array' : ($option->acceptValue() ? 'string' : 'bool'),
             ]);
         }
 

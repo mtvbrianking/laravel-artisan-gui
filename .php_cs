@@ -1,6 +1,6 @@
 <?php
 
-// https://mlocati.github.io/php-cs-fixer-configurator/
+// https://mlocati.github.io/php-cs-fixer-configurator
 
 $rules = [
     '@PSR2' => true,
@@ -31,6 +31,7 @@ $rules = [
     'concat_space' => [
         'spacing' => 'none',
     ],
+    'ternary_operator_spaces' => true,
     'blank_line_before_statement' => true,
     'method_chaining_indentation' => true,
     'ordered_imports' => [
