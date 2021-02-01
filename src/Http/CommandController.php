@@ -80,8 +80,10 @@ class CommandController
             // $output = $this->kernel->output();
             $output = $outputBuffer->fetch();
         } catch (\Exception $exception) {
-            $exitCode = $exception->getCode() ?? 500;
-            $output = $exception->getMessage();
+            return response([
+                'code' => $exception->getCode() ?? '',
+                'message' => $exception->getMessage(),
+            ], 500);
         }
 
         return response([
@@ -117,10 +119,6 @@ class CommandController
             }
 
             if (is_array($value)) {
-                // foreach ($value as $item) {
-                //   $cli_params .= " {$name}=\"{$item}\"";
-                // }
-
                 $items = implode(',', $value);
                 $cli_params .= " {$name}=\"{$items}\"";
 
