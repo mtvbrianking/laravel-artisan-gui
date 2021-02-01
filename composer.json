@@ -2,7 +2,7 @@
   "name": "bmatovu/laravel-artisan-gui",
   "description": "Laravel artisan GUI",
   "homepage": "https://github.com/mtvbrianking/laravel-artisan-gui",
-  "type": "project",
+  "type": "library",
   "license": "MIT",
   "keywords": [
     "laravel",

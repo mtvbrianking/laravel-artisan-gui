@@ -1,10 +1,10 @@
 ![](./images/banner.png)
 
-[![Build Status](https://travis-ci.org/mtvbrianking/laravel-artisan-gui.svg?branch=master)](https://travis-ci.org/mtvbrianking/laravel-artisan-gui)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mtvbrianking/laravel-artisan-gui/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mtvbrianking/laravel-artisan-gui/?branch=master)
+[![Tests](https://github.com/mtvbrianking/laravel-route-list/workflows/run-tests/badge.svg)](https://github.com/mtvbrianking/laravel-route-list/actions?query=workflow:run-tests)
+[![Documentation](https://github.com/mtvbrianking/laravel-route-list/workflows/gen-docs/badge.svg)](https://mtvbrianking.github.io/laravel-route-list/master)
+[![Code Quality](https://scrutinizer-ci.com/g/mtvbrianking/laravel-artisan-gui/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mtvbrianking/laravel-artisan-gui/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/mtvbrianking/laravel-artisan-gui/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/mtvbrianking/laravel-artisan-gui/?branch=master)
-[![StyleCI](https://github.styleci.io/repos/230607368/shield?branch=master)](https://github.styleci.io/repos/230607368)
-[![Documentation](https://img.shields.io/badge/Documentation-Blue)](https://mtvbrianking.github.io/laravel-artisan-gui)
+[![Code Style](https://github.styleci.io/repos/334360362/shield?branch=master)](https://github.styleci.io/repos/334360362)
 
 ## Usage
 

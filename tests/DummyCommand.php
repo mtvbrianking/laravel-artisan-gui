@@ -16,10 +16,6 @@ class DummyCommand extends Command
      */
     protected $signature = 'command:dummy {arg} {array-args} {--bool-opt} {--value-opt=} {--array-opts=*}';
 
-    // protected $signature = 'command:dummy
-    //                             {required-arg} {optional-arg?} {default-arg=foo} {array-args*}
-    //                             {--bool-option} {--value-option=} {--default-option=bar} {--array-options=*}';
-
     /**
      * The console command description.
      *

@@ -24,20 +24,20 @@ class CommandController
      *
      * @var \Illuminate\Contracts\Validation\Factory
      */
-    protected $validation;
+    protected $validationFactory;
 
     /**
      * Create a new controller instance.
      *
      * @param \Illuminate\Contracts\Console\Kernel     $kernel
-     * @param \Illuminate\Contracts\Validation\Factory $validation
+     * @param \Illuminate\Contracts\Validation\Factory $validationFactory
      *
      * @return void
      */
-    public function __construct(Kernel $kernel, ValidationFactory $validation)
+    public function __construct(Kernel $kernel, ValidationFactory $validationFactory)
     {
         $this->kernel = $kernel;
-        $this->validation = $validation;
+        $this->validationFactory = $validationFactory;
     }
 
     /**
@@ -69,7 +69,7 @@ class CommandController
     {
         $command = $this->resolve($request->command);
 
-        $validated = $this->validation->make($request->all(), $this->rules($command))->validate();
+        $validated = $this->validationFactory->make($request->all(), $this->rules($command))->validate();
 
         $parameters = array_merge($validated, config('artisan-gui.options'));
 
